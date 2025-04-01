@@ -1,5 +1,4 @@
-# 🎈![Loan](https://github.com/user-attachments/assets/367ce9ba-a852-4e3e-9e0a-0ddab2fdacec)
- Loan Approval Chances App
+# ![Loan](https://github.com/user-attachments/assets/367ce9ba-a852-4e3e-9e0a-0ddab2fdacec) Loan Approval Chances App
 
 A simple Streamlit app template for you to modify!
 
