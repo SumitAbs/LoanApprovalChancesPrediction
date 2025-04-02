@@ -36,12 +36,12 @@ loan_prediction = LoanApprovalPrediction("loan_approval_model.pkl")
 
 # Sample input data
 user_data = {
-    "cibil_score": 750,
-    "income_annum": 50000,
-    "loan_amount": 300000,
-    "loan_term": 120,
-    "luxury_assets_value": 100000,
-    "education": "Graduate",
+    "cibil_score": 850,
+    "income_annum": 500000, #5,00,000
+    "loan_amount":  300000, #3,00,000
+    "loan_term": 12,
+    "luxury_assets_value": 100000, #1,00,000
+    "education": "Graduate", 
     "self_employed": "No"
 }
 
