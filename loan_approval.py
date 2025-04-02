@@ -6,7 +6,7 @@ class LoanApprovalPrediction:
     def __init__(self, model_filename='loan_approval_model.pkl'):
         # Load the model, label encoders, and scaler from the saved file
         with open(model_filename, "rb") as file:
-        model_data = pickle.load(file)
+            model_data = pickle.load(file)
         self.model = model_data['model']
         self.label_encoders = model_data['label_encoders']
         self.scaler = model_data['scaler']
