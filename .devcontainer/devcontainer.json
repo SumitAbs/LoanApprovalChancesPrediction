@@ -6,8 +6,9 @@
     "codespaces": {
       "openFiles": [
         "README.md",
-        "streamlit_app.py",
-        "loan_approval.py",
+        // "streamlit_app.py",
+        // "loan_approval.py",
+        "train_model.py",
       ]
     },
     "vscode": {
