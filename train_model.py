@@ -23,12 +23,21 @@ class TrainLoanPredictionModel:
         self.df.drop(columns=["loan_id"], inplace=True)
 
         # Encoding categorical variables and storing encoded labels
+        # for col in ["education", "self_employed", "loan_status"]:
+        #     self.df[col] = self.df[col].str.strip()
+        #     le = LabelEncoder()
+        #     self.df[f"{col}_encoded"] = le.fit_transform(self.df[col])  # Store encoded labels
+        #     self.df[col] = le.transform(self.df[col])  # Keep encoded values in original column
+        #     self.label_encoders[col] = le
+            
         for col in ["education", "self_employed", "loan_status"]:
             self.df[col] = self.df[col].str.strip()
             le = LabelEncoder()
-            self.df[f"{col}_encoded"] = le.fit_transform(self.df[col])  # Store encoded labels
-            self.df[col] = le.transform(self.df[col])  # Keep encoded values in original column
+            self.df[col] = le.fit_transform(self.df[col])  # encode & replace
             self.label_encoders[col] = le
+
+        for col, le in self.label_encoders.items():
+            print(f"{col} mapping: {dict(zip(le.classes_, le.transform(le.classes_)))}")
 
         # Features and target variable
         X = self.df.drop(columns=["loan_status"])
