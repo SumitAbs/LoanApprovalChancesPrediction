@@ -27,7 +27,7 @@ class LoanApprovalPrediction:
 
 # Streamlit UI
 st.set_page_config(page_title="Loan Approval Predictor", layout="centered")
-st.title("🏦 Loan Approval Predictor")
+st.title("🏦 Loan Approval Predictor.")
 st.write("Enter your details below to check your loan approval chances.")
 
 # User input form
