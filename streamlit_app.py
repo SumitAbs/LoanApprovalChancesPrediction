@@ -91,7 +91,7 @@ if submitted:
     }
 
     # Instantiate the LoanApprovalAnalysis class (assumes CSV path is correct)
-    file_path = "ML_Project_Q2.csv"
+    file_path = "LoanPredictionTraining.csv"
     loan_analysis = LoanApprovalAnalysis(file_path)
     X, X_scaled, y = loan_analysis.load_and_preprocess_data()
     loan_analysis.train_model(X_scaled, y)
